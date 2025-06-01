@@ -8,5 +8,11 @@ f:
     # Your code here
 
     # This is how you return from a function. You'll learn more about this later.
-    # This should be the last line in your program.
+    # This should be the last line in your program
+    addi t0, a0, 3
+    slli t0, t0, 2
+    add t1, t0, a1
+    lw t2, 0(t1)
+    add a0, x0, t2
+    
     jr ra
